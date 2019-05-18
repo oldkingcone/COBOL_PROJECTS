@@ -1,0 +1,30 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. NumberPractice.
+       AUTHOR. OLDKINGCONE.
+       *>-- to compile
+       *>-- cobc -x -free *.cobc -o
+
+       ENVIRONMENT DIVISION.
+              
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 BirthDate.
+           02 YearOfBirth.
+               03 CenturyOB       PIC 99.
+               03 YearOB          PIC 99.
+           02 MonthOfBirth        PIC 99.
+           02 DayOfBirth          PIC 99.
+
+
+       PROCEDURE DIVISION.
+       Begin.
+       MOVE 19750215 TO BIRTHDATE.
+       DISPLAY "Month is = " MONTHOFBIRTH.
+       DISPLAY "Century of birth is = " CENTURYOB.
+       DISPLAY "Year of birth is = " YEAROB.
+       DISPLAY "Day of birth is = " DAYOFBIRTH.
+       MOVE ZEROS TO YEAROFBIRTH.
+       DISPLAY "Year of birth is now = " YEAROFBIRTH.
+
+       STOP RUN.
