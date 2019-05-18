@@ -1,14 +1,19 @@
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. NumberPractice.
+       PROGRAM-ID. COBOL_PRACTICE.
        AUTHOR. OLDKINGCONE.
        *>-- to compile
        *>-- cobc -x -free *.cobc -o
+       
+       *>-- This will be amazing. Going to work some networking into
+       *>-- This program.
 
        ENVIRONMENT DIVISION.
+       *>-- Null enviroment division.
               
 
        DATA DIVISION.
        WORKING-STORAGE SECTION.
+       *> Global variables.
        01 BirthDate.
            02 YearOfBirth.
                03 CenturyOB       PIC 99.
